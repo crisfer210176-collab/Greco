@@ -1,49 +1,221 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Lovable App</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <title>Greco Pooles – Sala de Pool en Grecia, Costa Rica</title>
-    <meta name="description" content="Sala de pool en Grecia, Alajuela. Mesas de billar, ambiente tranquilo y ubicación céntrica. ₡1500 media hora. Abierto de lunes a sábado." />
-    <meta name="keywords" content="pool en Grecia, billar Grecia Costa Rica, donde jugar pool en Grecia, sala de billar Grecia Alajuela" />
-    <link rel="canonical" href="https://grecopooles.com" />
-    <!-- TODO: Update og:title to match your application name -->
-    <meta property="og:title" content="Lovable App" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:title" content="Greco Pooles – Sala de Pool en Grecia" />
-    <meta property="og:description" content="Disfruta de una partida de pool en un ambiente tranquilo y cómodo en el centro de Grecia, Costa Rica." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Greco Pooles",
-      "description": "Sala de pool en Grecia, Alajuela, Costa Rica",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Grecia",
-        "addressRegion": "Alajuela",
-        "addressCountry": "CR"
-      },
-      "telephone": "+50689718066",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-          "opens": "13:00",
-          "closes": "22:00"
-        }
-      ]
-    }
-    </script>
-  </head>
-  <body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Greco Pooles | Sala de Pool en Grecia</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0b3d2e;
+color:white;
+}
+
+header{
+background:#071f18;
+padding:20px;
+text-align:center;
+}
+
+.logo{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+}
+
+.logo svg{
+width:60px;
+height:60px;
+}
+
+h1{
+margin:0;
+font-size:32px;
+}
+
+nav{
+margin-top:10px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1511882150382-421056c89033");
+background-size:cover;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.section{
+padding:60px 20px;
+max-width:1000px;
+margin:auto;
+text-align:center;
+}
+
+.prices{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.price-box{
+background:#123f30;
+padding:30px;
+border-radius:10px;
+width:220px;
+}
+
+.price-box h3{
+margin-top:0;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+}
+
+.contact{
+background:#071f18;
+padding:40px;
+text-align:center;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:15px;
+font-size:14px;
+}
+
+button{
+background:#1db954;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<svg viewBox="0 0 100 100">
+<circle cx="50" cy="50" r="45" fill="#0f6b4f"/>
+<circle cx="35" cy="40" r="8" fill="white"/>
+<circle cx="65" cy="60" r="8" fill="white"/>
+</svg>
+
+<h1>Greco Pooles</h1>
+
+</div>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#precios">Precios</a>
+<a href="#galeria">Galería</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</header>
+
+
+<section class="hero" id="inicio">
+
+<h2>Sala de Pool en Grecia</h2>
+
+<p>Ven a disfrutar una buena partida con amigos.</p>
+
+<button onclick="location.href='#precios'">
+Ver precios
+</button>
+
+</section>
+
+
+<section class="section" id="precios">
+
+<h2>Precios</h2>
+
+<div class="prices">
+
+<div class="price-box">
+<h3>Media hora</h3>
+<p>₡1500</p>
+</div>
+
+<div class="price-box">
+<h3>1 hora</h3>
+<p>₡2500</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section" id="galeria">
+
+<h2>Galería</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1605727216801-e27ce1d0cc28">
+<img src="https://images.unsplash.com/photo-1511882150382-421056c89033">
+<img src="https://images.unsplash.com/photo-1586816001966-79b736744398">
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contacto">
+
+<h2>Contacto</h2>
+
+<p>Teléfono / WhatsApp</p>
+
+<p><strong>+506 8971 8066</strong></p>
+
+<p>Grecia, Alajuela, Costa Rica</p>
+
+</section>
+
+
+<footer>
+
+© 2026 Greco Pooles
+
+</footer>
+
+</body>
+</html>
